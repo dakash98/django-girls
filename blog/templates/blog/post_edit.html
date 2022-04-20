@@ -4,6 +4,7 @@
     <h2>New post</h2>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
-        <button type="submit" class="save btn btn-secondary">Save</button>
+        <button type="submit" class="save btn btn-secondary" name="submit" value="save">Save</button>
+        <button type="submit" class="save btn btn-secondary" name="submit" value="delete" style="margin-right:1%" >Delete</button>
     </form>
 {% endblock %}
